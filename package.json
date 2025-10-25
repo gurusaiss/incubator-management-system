@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && next export -o docs",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs",
     "dev": "next dev",
-    "lint": "eslint .",
-    "start": "next start"
+    "build": "next build && next export -o docs",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
