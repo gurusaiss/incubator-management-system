@@ -2,12 +2,14 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gurusaiss.github.io/incubator-management-system",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export -o docs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d docs"
+    "lint": "next lint"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
